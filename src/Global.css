@@ -1,0 +1,758 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.App{
+  height: 100vh;
+}
+ 
+.container {
+  background-image: url("./image/bgImgforsinup.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+.form-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+  width: 100%; 
+  max-width: 10000px;
+  margin: 0 auto;
+  height: 100vh;
+}
+ 
+.Login-form {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 25px;
+  box-shadow: 0 0 255px rgba(75, 63, 59, 0.1);
+  width: 47%;
+  border: 10px solid;
+  border-color: #555; 
+  margin-left: 45px;
+  height: 100%;
+}
+
+.Login-form a.login-link {
+  color: orange;
+  display: block;
+  
+  margin-bottom: 10px;
+}
+
+.Login-form label {
+  display: block;
+  padding-bottom: 10px;
+   
+}
+
+.Login-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.box{  margin-top: 10px;
+ 
+}
+.terms {
+  display: inline-flex;
+  align-items: center;
+   
+  margin-right: 20%;
+}
+
+.terms input {
+  margin-left: 20px;
+  margin-bottom: 25px;
+  width: 100px;
+}
+.orText {
+  margin-top: 10px;
+  padding-left: 45%;
+}
+
+.create-account-button {
+  background-color: #d6d0d0;
+  color: white;
+  padding: 12px;
+  border: none;
+   
+  width: 100%;
+  border-radius: 35px;
+}
+.icon-google{
+  font-size: xx-large;
+  margin-left: 109px;
+  width: 100px;
+}
+.button-google{
+  background-color: #d6d0d0;
+  color: white;
+  padding: 12px;
+  border: none;
+   height: 35px;
+  width: 100%;
+  border-radius: 35px; 
+   
+  display: inline-flex;
+  align-items: center;
+  background-color: rgb(220, 51, 51);
+  border: none;
+   
+  
+  }
+
+ 
+   
+
+
+/****************************************** Media Query for iPad (max-width: 1024px) ***************************/
+
+@media (max-width: 1024px) {
+  .form-container {
+    flex-direction: column; /* Stack the form on smaller screens */
+    align-items: center;
+  }
+
+  .Login-form {
+    width: 90%; /* Full width for form */
+    margin-left: 0; /* Center it horizontally */
+    margin-bottom: 20px; /* Add some space below */
+    padding: 20px; /* Reduce padding for smaller screens */
+  }
+
+  .terms {
+    margin-right: 0; /* Remove extra right margin */
+    justify-content: center; /* Center align terms */
+  }
+
+  .terms input {
+    width: auto; /* Adjust checkbox size */
+  }
+
+  .orText {
+    padding-left: 0; /* Center the "or" text */
+    text-align: center; /* Align text to center */
+  }
+
+  .create-account-button,
+  .google-button {
+    padding: 10px; /* Adjust button padding */
+    font-size: 1rem; /* Adjust font size */
+  }
+}
+
+
+
+/************************* Media Query for phone (max-width: 480px)  ****************************************/
+
+@media (max-width: 480px) {
+  .form-container {
+    flex-direction: column; /* Stack the form vertically */
+    align-items: center;
+    padding: 10px; /* Add padding for better mobile fit */
+  }
+
+  .Login-form {
+    width: 100%; /* Full width for the form */
+    margin-left: 0; /* Center the form */
+    margin-bottom: 15px; /* Add spacing below form */
+    padding: 15px; /* Reduce padding for mobile */
+    box-shadow: none; /* Remove shadow for a cleaner look */
+  }
+
+  .terms {
+    margin-right: 0; /* Remove any right margin */
+    justify-content: center; /* Center-align the terms */
+    text-align: center; /* Center the text */
+    margin-bottom: 10px; /* Add spacing below terms */
+  }
+
+  .terms input {
+    width: auto; /* Maintain natural checkbox size */
+    margin-right: 5px; /* Add some spacing between checkbox and label */
+  }
+
+  .orText {
+    padding-left: 0;
+    text-align: center; /* Center-align the "or" text */
+    margin: 10px 0; /* Add vertical spacing */
+  }
+
+  .create-account-button,
+  .google-button {
+    width: 100%; /* Make buttons full width */
+    padding: 12px; /* Larger tappable area */
+    font-size: 1rem; /* Keep the font size reasonable */
+    margin-bottom: 10px; /* Add spacing between buttons */
+  }
+
+  .social-login {
+    flex-direction: column; /* Stack social buttons vertically */
+    align-items: center; /* Center-align social buttons */
+  }
+
+  .google-button,
+  .apple-button,
+  .facebook-button {
+    width: 100%; /* Full width for social buttons */
+    margin-bottom: 10px; /* Space between buttons */
+  }
+}
+
+/****************************** singInPage.css ************************************/
+@media only screen and (min-width: 1024px) {
+   
+  
+ 
+.sign-in-container {
+  max-width: 600px;
+  margin-left:70px;
+  padding: 50px;
+   
+  height: 100vh;
+  
+ 
+  text-align: center;
+
+  background-color: #fff;
+ 
+  border-radius: 25px;
+  box-shadow: 0 0 255px rgba(75, 63, 59, 0.1);
+  width: 47%;
+  border: 10px solid;
+  border-color: #555;
+  
+}
+
+h2 {
+  margin-bottom: 10px;
+  
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 15px;
+  margin-top: 35px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+}
+
+.sign-in-button {
+  width: 30%;
+  padding: 10px;
+  background-color: #ff9900;
+  color: white;
+  border: none;
+  border-radius: 25px;
+   margin-left: 65%;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.sign-in-button:hover {
+  background-color: #0056b3;
+}
+
+.social-login {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.google-button, .apple-button, .facebook-button {
+  width: 100%;
+  padding: 10px 19px;
+  margin: 5px 5px;
+  display: inline-flex;
+  align-items: center;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  padding-right: 10%;
+  
+}
+
+.google-button {
+  background-color: #db4437;
+  color: white;
+}
+
+.apple-button {
+  background-color: #000;
+  color: white;
+}
+
+.facebook-button {
+  background-color: #4267B2;
+  color: white;
+}
+
+ 
+.google-icon, .apple-icon, .facebook-icon{
+   font-size: xx-large;
+  margin-left: 99px;
+  width: 100px;
+  
+  
+  
+}
+.google-text  {
+  width: 100%;
+  background-color: #db4437;
+  color: white;
+  border: #c13528;
+   padding-right: 50px;
+   text-align: start;
+   font-size: larger;
+}
+
+.apple-text{
+  width: 100%;
+  background-color:black;
+  color: white;
+  border:black;
+   padding-right: 50px;
+   text-align: start;
+   font-size: larger;
+}
+
+.facebook-text{
+  width: 100%;
+  background-color: #4267B2;
+  color: white;
+  border:   #4267B2;
+   padding-right: 50px;
+   text-align: start;
+   font-size: larger;
+}
+
+}
+
+
+/************************* Media Query for ipad (max-width: 1024px)  ****************************************/
+
+
+
+@media (max-width: 1024px) {
+  .sign-in-container {
+    width: 70%; /* Increase the width for a better fit on tablets */
+    margin: auto; /* Center the form horizontally */
+    padding: 40px; /* Adjust padding to make better use of space */
+    border-radius: 20px; /* Slightly reduce border-radius for cleaner look */
+  }
+
+  input {
+    width: 100%; /* Keep inputs full width */
+    padding: 12px; /* Adjust padding for a more compact form */
+    margin-top: 25px; /* Reduce margin to optimize space */
+    margin-bottom: 15px; /* Consistent margin */
+    border-radius: 12px; /* Adjust input border-radius for a sleeker look */
+  }
+
+  .sign-in-button {
+    width: 100%; /* Full width for a consistent look */
+    padding: 12px; /* Increase padding for better tap area */
+    margin-left: 0; /* Center the button horizontally */
+    margin-bottom: 20px; /* Add space below the button */
+    font-size: 1rem; /* Adjust font size for readability */
+  }
+
+  .google-button, .apple-button, .facebook-button {
+    width: 100%; /* Ensure full-width buttons on iPad */
+    margin: 8px 0; /* Space between the buttons */
+    padding: 12px; /* Increase padding for better tappable area */
+     
+    border-radius: 20px; /* Rounded edges for a smoother look */
+  }
+
+  .google-icon, .apple-icon, .facebook-icon {
+    font-size: x-large; /* Reduce icon size slightly */
+    margin-left: 10px; /* Adjust margin for proper alignment */
+    width: 40px; /* Adjust width for consistent spacing */
+  }
+
+  .google-text, .apple-text, .facebook-text {
+    font-size: medium; /* Adjust font size for better readability */
+    padding-left: 15px; /* Add some spacing between the icon and text */
+    text-align: left; /* Ensure text alignment is left */
+  }
+}
+
+
+/************************* Media Query for phone (max-width: 480px)  ****************************************/
+  
+@media (max-width: 480px) {
+  .sign-in-container {
+    width: 90%; /* Almost full width to fit the screen */
+    margin: auto; /* Center the form on the page */
+    padding: 20px; /* Adjust padding to fit mobile screens */
+    border-radius: 15px; /* Smaller border radius for a sleek look */
+    border-width: 5px; /* Thinner border for mobile */
+  }
+
+  h2 {
+    font-size: 1.5rem; /* Reduce font size for mobile */
+    margin-bottom: 15px; /* Add more space below the heading */
+  }
+
+  p {
+    font-size: 1rem; /* Adjust font size for better readability on mobile */
+    margin-bottom: 20px;
+  }
+
+  input {
+    width: 100%; /* Full width input for mobile */
+    padding: 12px; /* Adjust padding for mobile */
+    margin-top: 20px; /* Reduce the margin for tighter spacing */
+    margin-bottom: 10px; /* Reduce bottom margin */
+    border-radius: 10px; /* Smaller, sleeker radius for inputs */
+  }
+
+  .sign-in-button {
+    width: 100%; /* Full width button */
+    padding: 12px; /* Increase padding for a larger tap area */
+    background-color: #ff9900;
+    color: white;
+    border-radius: 20px; /* Adjust border radius for mobile */
+    margin-left: 0; /* Center the button */
+    margin-bottom: 20px; /* Add some space below the button */
+    font-size: 1.1rem; /* Increase font size for readability */
+  }
+
+  .sign-in-button:hover {
+    background-color: #0056b3; /* Keep hover effect consistent */
+  }
+
+  .social-login {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center; /* Center the buttons */
+  }
+
+  .google-button, .apple-button, .facebook-button {
+    width: 100%; /* Full width for social buttons */
+    padding: 12px; /* Larger padding for a bigger tap area */
+    margin: 10px 0; /* Add space between buttons */
+    font-size: 1.1rem; /* Increase font size */
+    border-radius: 15px; /* Slightly smaller border radius */
+  }
+
+  .google-icon, .apple-icon, .facebook-icon {
+    font-size: x-large; /* Adjust icon size for mobile */
+    margin-left: 10px; /* Adjust spacing for icons */
+    width: 40px; /* Control icon width */
+  }
+
+  .google-text, .apple-text, .facebook-text {
+    font-size: 1rem; /* Adjust font size for readability */
+    padding-left: 10px; /* Adjust padding for text spacing */
+    text-align: left; /* Left-align text */
+  }
+
+  .orText {
+    padding: 10px 0; /* Add padding to separate from other elements */
+    text-align: center; /* Center the "or" text */
+    font-size: 1rem; /* Font size for mobile readability */
+  }
+}
+
+
+
+
+
+
+
+/* CarSelection.css */
+.car-selection-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centers content vertically */
+  align-items: center; /* Centers content horizontally */
+  height: 100vh; /* Makes the container take the full viewport height */
+  
+  text-align: center;
+  padding: 40px; /* Increased padding for a spacious feel */
+  max-width: 12000px; /* Increased max-width for larger screens */
+  margin: 0 auto;
+  background-color: #000;
+}
+
+h2 {
+  margin-bottom: 30px; /* Increased margin for better spacing */
+  font-size: 2.5rem; /* Larger font size for better visibility */
+}
+
+.car-card-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 30px; /* Increased gap for more spacing between cards */
+  flex-wrap: nowrap; /* Keeps all cards in the same row */
+  overflow-x: auto; /* Allows horizontal scrolling if needed */
+  padding: 20px 0; /* Add some padding for better aesthetics */
+}
+
+.car-card {
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  padding: 20px; /* Increased padding for more comfortable click area */
+  width: 250px; /* Increased card width for better visibility */
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  flex-shrink: 0; /* Ensures the cards don't shrink when space is tight */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Added shadow for depth */
+}
+
+.car-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.car-card:hover {
+  transform: scale(1.05); /* Slight increase in size on hover */
+}
+
+.car-card.selected {
+  border: 3px solid orange;
+  background-color: #fff;
+  transform: scale(1.1); /* Slightly larger when selected */
+}
+
+.proceed-btn {
+  margin-top: 30px; /* Increased margin for better spacing */
+  background-color: orange;
+  color: white;
+  padding: 15px 30px; /* Increased padding for a larger button */
+  border: none;
+  border-radius: 5px;
+   
+  cursor: pointer;
+  font-size: 1.2rem; /* Increased font size for better readability */
+}
+
+.proceed-btn:hover {
+  background-color: darkorange;
+}
+
+.arrow-btn {
+  background-color: transparent;
+  border: none;
+  font-size: 32px; /* Larger arrow buttons */
+  cursor: pointer;
+   
+  border-radius: 50px;
+  background-color: #555;
+  padding: 10px 20px; /* Increased padding for better click area */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Added transform transition */
+}
+
+.arrow-btn:hover {
+  background-color: rgba(0, 0, 0, 0.1); /* Change background on hover */
+  transform: scale(1.1); /* Slight scaling on hover */
+}
+
+/* Optional: Media query for even larger screens */
+@media (min-width: 1200px) {
+  .car-card-wrapper {
+    gap: 40px; /* More gap for larger screens */
+  }
+
+  .car-card {
+    width: 300px; /* Adjust card size for larger screens */
+  }
+}
+
+
+
+/***************************************** Media query for iPads ***********************************/
+
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .car-selection-container {
+    padding: 20px; /* Reduce padding to fit better on iPad screens */
+    height: auto; /* Let height adjust based on content */
+    background-color: #000; /* Retain the black background */
+  }
+
+  h2 {
+    font-size: 2rem; /* Slightly smaller font for iPads */
+  }
+
+  .car-card-wrapper {
+    gap: 20px; /* Reduce gap between cards */
+    padding: 10px 0; /* Adjust padding for better fit */
+  }
+
+  .car-card {
+    width: 200px; /* Reduce card width to fit more cards on screen */
+    padding: 15px; /* Adjust padding to match the smaller card size */
+  }
+
+  .proceed-btn {
+    font-size: 1rem; /* Reduce button size slightly for better readability */
+    padding: 12px 25px; /* Smaller button for iPad screens */
+  }
+
+  .arrow-btn {
+    font-size: 28px; /* Slightly smaller arrow buttons */
+    padding: 8px 16px; /* Adjust padding for better touch targets */
+  }
+}
+
+/* For landscape mode (wide screens like iPad in horizontal orientation) */
+@media only screen and (min-width: 1024px) and (max-width: 1366px) {
+  .car-selection-container {
+    padding: 30px; /* Adjust padding for landscape mode */
+  }
+
+  .car-card-wrapper {
+    gap: 25px; /* Slightly larger gap for landscape view */
+  }
+
+  .car-card {
+    width: 220px; /* Slightly larger cards for better visibility */
+  }
+
+  .arrow-btn {
+    font-size: 30px; /* Adjust arrow size for landscape mode */
+  }
+}
+
+
+
+/*********************  For mobile devices (less than 768px) ********************************/
+
+
+@media only screen and (max-width: 768px) {
+  .car-selection-container {
+    padding: 15px; /* Reduced padding for compact view */
+    height: auto; /* Let height adjust based on content */
+    background-color: #000; /* Retain the black background */
+  }
+
+  h2 {
+    font-size: 1.8rem; /* Smaller font for mobile */
+    margin-bottom: 15px; /* Less margin for tighter spacing */
+  }
+
+  .car-card-wrapper {
+    flex-direction: column; /* Stack cards vertically */
+    align-items: center; /* Center cards horizontally */
+    gap: 15px; /* Reduce gap between cards */
+    padding: 10px 0; /* Adjust padding for better fit */
+  }
+
+  .car-card {
+    width: 100%; /* Full width for cards on mobile */
+    max-width: 300px; /* Optional: limit the maximum width of cards */
+    padding: 10px; /* Adjust padding for a smaller card size */
+    box-shadow: none; /* Remove shadow for a flatter look */
+  }
+
+  .proceed-btn {
+    font-size: 1rem; /* Reduce button size for better readability */
+    padding: 10px 20px; /* Smaller button for mobile screens */
+  }
+
+  .arrow-btn {
+    font-size: 24px; /* Adjust arrow button size */
+    padding: 5px 10px; /* Smaller padding for touch targets */
+  }
+}
+
+
+/************************************ Modal.css ***********************/
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 500px;
+  width: 90%;
+}
+
+.modal-image {
+  width: 100%; /* Adjust image width */
+  border-radius: 10px;
+}
+
+.close-modal {
+  background-color: orange;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.close-modal:hover {
+  background-color: darkorange;
+}
+
+/**********************  Media query for iPads/Tablets  ****************************/
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .modal-content {
+    padding: 25px; /* Adjust padding for iPad screens */
+    max-width: 500px; /* Limit max width for iPads */
+  }
+
+  .close-modal {
+    padding: 10px 20px; /* Adjust padding for a better fit */
+    font-size: 0.9rem; /* Slightly smaller font size */
+  }
+}
+
+
+/********************* Media query for mobile phones ********************/
+
+
+@media only screen and (max-width: 767px) {
+  .modal-content {
+    padding: 15px; /* Reduce padding for mobile */
+    max-width: 95%; /* Allow more width on small screens */
+  }
+
+  .modal-image {
+    max-height: 150px; /* Smaller height for images on mobile */
+  }
+
+  .close-modal {
+    padding: 8px 16px; /* Smaller button for mobile */
+    font-size: 0.85rem; /* Smaller font size for mobile */
+  }
+}

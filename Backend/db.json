@@ -1,0 +1,95 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "firstName": "John",
+      "lastName": "Doe",
+      "email": "john.doe@example.com",
+      "password": "password123"
+    },
+    {
+      "id": "2",
+      "firstName": "Jane",
+      "lastName": "Doe",
+      "email": "jane.doe@example.com",
+      "password": "password456"
+    },
+    {
+      "id": "9fd1",
+      "firstName": "Ayushi",
+      "lastName": "NA",
+      "email": "as4390796@gmail.com",
+      "password": "Ishappy@123"
+    },
+    {
+      "id": "8ec0",
+      "firstName": "Ayushi",
+      "lastName": "NA",
+      "email": "as4390796@gmail.com",
+      "password": "Udhhsbxcnx@1234"
+    },
+    {
+      "id": "e048",
+      "firstName": "Ayushi",
+      "lastName": "NA",
+      "email": "as4390796@gmail.com",
+      "password": "Tgytrdh@12345"
+    },
+    {
+      "id": "1d35",
+      "firstName": "jyoti",
+      "lastName": "kumari",
+      "email": "jyoti@gmail.com",
+      "password": "Jyifhhbvb@1234"
+    },
+    {
+      "id": "f3b1",
+      "firstName": "jyoti",
+      "lastName": "kumari",
+      "email": "jyoti@gmail.com",
+      "password": "Isjyoti@123"
+    },
+    {
+      "id": "ba09",
+      "firstName": "jyoti",
+      "lastName": "kumari",
+      "email": "jyoti@gmail.com",
+      "password": "Regfjyfdcgv@123"
+    },
+    {
+      "id": "fce9",
+      "firstName": "jyoti",
+      "lastName": "kumari",
+      "email": "jyoti@gmail.com",
+      "password": "Yvxdsedrtygh@1234"
+    },
+    {
+      "id": "a4cf",
+      "firstName": "Ayushi",
+      "lastName": "NA",
+      "email": "as4390796@gmail.com",
+      "password": "Snkjghfhvbvc@123"
+    },
+    {
+      "id": "6d24",
+      "firstName": "Ayushi",
+      "lastName": "NA",
+      "email": "as4390796@gmail.com",
+      "password": "ISHAppy@123"
+    },
+    {
+      "id": "a3b0",
+      "firstName": "Ayushi",
+      "lastName": "NA",
+      "email": "as4390796@gmail.com",
+      "password": "Agrdhnbjhbv@1234"
+    },
+    {
+      "id": "3f29",
+      "firstName": "Ayushi",
+      "lastName": "NA",
+      "email": "as4390796@gmail.com",
+      "password": "Idggjhfgfc@134"
+    }
+  ]
+}
